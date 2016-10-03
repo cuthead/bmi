@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>bmi</title>
+</head>
+<body>
+<script>
+function bmicomputing() {
+var height = document.getElementById("height").value;
+var weight = document.getElementById("weight").value;
+var bmi = weight/(height*height);
+document.getElementById("bmivalue").value = bmi.toString().substr(0,4);
+}
+</script>
+height<br>
+<input type="text" id="height">meters<br>
+weight<br>
+<input type="text" id="weight">kilograms<br>
+bmi<br>
+<input type="text" id="bmivalue"><br>
+<button onclick="bmicomputing()">computing</button>
+</body>
+</html>

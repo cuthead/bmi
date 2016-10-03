@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ppi</title>
+</head>
+<body>
+<script>
+function ppicomputing() {
+var height = document.getElementById('height').value;
+var width = document.getElementById('width').value;
+var diagonal = document.getElementById('diagonal').value;
+var ppi= (Math.sqrt(height * height + width * width)) / diagonal;
+var ppivalue = document.getElementById('ppivalue');
+document.getElementById("ppivalue").value = ppi.toString().substr(0,4);
+}
+</script>
+height<br>
+<input type="text" id="height">height<br>
+width<br>
+<input type="text" id="width">width<br>
+diagonal<br>
+<input type="text" id="diagonal">diagonal<br>
+ppi<br>
+<input type="text" id="ppivalue"><br>
+<button onclick="ppicomputing()">computing</button>
+</body>
+</html>
