@@ -7,18 +7,18 @@
 <body>
 <script>
 function ppi() {
-var height = document.getElementById('height').value;
 var width = document.getElementById('width').value;
+var height = document.getElementById('height').value;
 var diagonal = document.getElementById('diagonal').value;
 var ppicompute= (Math.sqrt(height * height + width * width)) / diagonal;
 var ppivalue = document.getElementById('ppivalue');
 document.getElementById("ppivalue").value = ppicompute.toString().substr(0,4);
 }
 </script>
-height<br>
-<input type="text" id="height">px<br>
 width<br>
 <input type="text" id="width">px<br>
+height<br>
+<input type="text" id="height">px<br>
 diagonal<br>
 <input type="text" id="diagonal">inch<br>
 ppi<br>
