@@ -6,11 +6,11 @@
 </head>
 <body>
 <script>
-function bmicomputing() {
+function bmi() {
 var height = document.getElementById("height").value;
 var weight = document.getElementById("weight").value;
-var bmi = weight / (height * height);
-document.getElementById("bmivalue").value = bmi.toString().substr(0,4);
+var bmicompute = weight / (height * height);
+document.getElementById("bmivalue").value = bmicompute.toString().substr(0,4);
 }
 </script>
 height<br>
@@ -19,6 +19,6 @@ weight<br>
 <input type="text" id="weight">kilograms<br>
 bmi<br>
 <input type="text" id="bmivalue"><br>
-<button onclick="bmicomputing()">computing</button>
+<button onclick="bmi()">compute</button>
 </body>
 </html>
