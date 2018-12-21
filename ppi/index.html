@@ -6,23 +6,23 @@
 </head>
 <body>
 <script>
-function ppicomputing() {
+function ppi() {
 var height = document.getElementById('height').value;
 var width = document.getElementById('width').value;
 var diagonal = document.getElementById('diagonal').value;
-var ppi= (Math.sqrt(height * height + width * width)) / diagonal;
+var ppicompute= (Math.sqrt(height * height + width * width)) / diagonal;
 var ppivalue = document.getElementById('ppivalue');
-document.getElementById("ppivalue").value = ppi.toString().substr(0,4);
+document.getElementById("ppivalue").value = ppicompute.toString().substr(0,4);
 }
 </script>
 height<br>
-<input type="text" id="height">height<br>
+<input type="text" id="height">px<br>
 width<br>
-<input type="text" id="width">width<br>
+<input type="text" id="width">px<br>
 diagonal<br>
-<input type="text" id="diagonal">diagonal<br>
+<input type="text" id="diagonal">inch<br>
 ppi<br>
 <input type="text" id="ppivalue"><br>
-<button onclick="ppicomputing()">computing</button>
+<button onclick="ppi()">compute</button>
 </body>
 </html>
