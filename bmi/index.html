@@ -9,14 +9,14 @@
 function bmi() {
 var height = document.getElementById("height").value;
 var weight = document.getElementById("weight").value;
-var bmicompute = weight / (height * height);
+var bmicompute = weight * 10000 / (height * height);
 document.getElementById("bmivalue").value = bmicompute.toString().substr(0,4);
 }
 </script>
 height<br>
-<input type="text" id="height">meters<br>
+<input type="text" id="height">cm<br>
 weight<br>
-<input type="text" id="weight">kilograms<br>
+<input type="text" id="weight">kg<br>
 bmi<br>
 <input type="text" id="bmivalue"><br>
 <button onclick="bmi()">compute</button>
